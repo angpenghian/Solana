@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  solana-validator:
+    build: .
+    container_name: solana-validator
+    volumes:
+      - .:/home/sol
+    working_dir: /home/sol
+    tty: true
